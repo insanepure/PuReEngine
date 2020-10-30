@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Descriptions">
+      <UniqueIdentifier>{c25b874f-3403-4ffe-aeb5-56a0b8c7d4b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Interfaces">
+      <UniqueIdentifier>{d19262af-2ab7-497d-9f6c-aec53bbfa490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Utilities">
+      <UniqueIdentifier>{99b89647-6da4-4f99-bd9f-e85d33983aee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Core">
+      <UniqueIdentifier>{05878cee-d4e1-46ba-a139-a601798c875d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\OS">
+      <UniqueIdentifier>{74b65f7a-2476-4c44-81aa-3ee60ae5e53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\OS\Win">
+      <UniqueIdentifier>{4d1eac76-162e-48e7-9880-d3a4da386c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\OS\Linux">
+      <UniqueIdentifier>{986f0548-64c0-4c95-90f6-ee2a4b82d3a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\OS">
+      <UniqueIdentifier>{e33c8da6-d16e-4028-844d-c2249a6739d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\OS\Linux">
+      <UniqueIdentifier>{731e4ab7-0a65-4ef6-974b-3127df743389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\OS\Win">
+      <UniqueIdentifier>{d2dcef80-7e4a-47cb-bd43-80c72935cfb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Math">
+      <UniqueIdentifier>{86f060e6-697c-41dc-a1c0-28f24da6f018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Objects">
+      <UniqueIdentifier>{c9af5aaa-3b1c-4a2c-b8c8-4d45ee258b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Objects">
+      <UniqueIdentifier>{f88bb12d-b3ef-462a-a477-8b2a893a39f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Rendering">
+      <UniqueIdentifier>{0e029bcc-3208-4877-a001-1a42cd81a927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Rendering">
+      <UniqueIdentifier>{aaafd0d9-aa7a-4e68-8329-4872e8347a59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Network">
+      <UniqueIdentifier>{d8570b70-6057-479c-a1fa-d1607b67c94c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Network">
+      <UniqueIdentifier>{6c16779d-0625-43bc-a3e8-a5b3da58c1cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Core">
+      <UniqueIdentifier>{d03b259a-8a5b-49ae-948a-7640cbe8f5c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Physic">
+      <UniqueIdentifier>{3a57eb03-0741-470a-9e1d-1b407333618e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Physic">
+      <UniqueIdentifier>{94b504d4-d33d-4e62-ad8c-73498fca4a38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Lights">
+      <UniqueIdentifier>{878b632d-5c0e-4b45-a419-1d881c8c38f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Lights">
+      <UniqueIdentifier>{56d686e1-71da-4f4d-9ff6-82dbe906f343}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\PuReEngine\Color.h">
+      <Filter>Headerdateien\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\WindowDescription.h">
+      <Filter>Headerdateien\Descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\ApplicationDescription.h">
+      <Filter>Headerdateien\Descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IWindow.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IPlatform.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IScene.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\PlatformWin.h">
+      <Filter>Headerdateien\OS\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\WindowWin.h">
+      <Filter>Headerdateien\OS\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Application.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Core.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Defines.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Platform.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\GraphicsModuleType.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\PlatformLinux.h">
+      <Filter>Headerdateien\OS\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\WindowLinux.h">
+      <Filter>Headerdateien\OS\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IGraphics.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\GraphicsDescription.h">
+      <Filter>Headerdateien\Descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Texture2DDescription.h">
+      <Filter>Headerdateien\Descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Matrix.h">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Vector2.h">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Vector3.h">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Vector4.h">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IMaterial.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\ITexture2D.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IVertexBuffer.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IRendertarget.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IInput.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\InputWin.h">
+      <Filter>Headerdateien\OS\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\InputLinux.h">
+      <Filter>Headerdateien\OS\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Timer.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Camera.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Sprite.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Quad.h">
+      <Filter>Headerdateien\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Box.h">
+      <Filter>Headerdateien\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IIndexBuffer.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Mesh.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Socket.h">
+      <Filter>Headerdateien\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Quaternion.h">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Model.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\StackTraceWin.h">
+      <Filter>Headerdateien\OS\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\StackTraceLinux.h">
+      <Filter>Headerdateien\OS\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\DbgHelpDLL.h">
+      <Filter>Headerdateien\OS\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\ISignalHandler.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\SignalHandlerLinux.h">
+      <Filter>Headerdateien\OS\Linux</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\SignalHandlerWin.h">
+      <Filter>Headerdateien\OS\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Font.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\BoundingBox.h">
+      <Filter>Headerdateien\Physic</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\SoundPlayer.h">
+      <Filter>Headerdateien\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Sphere.h">
+      <Filter>Headerdateien\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\IInstanceBuffer.h">
+      <Filter>Headerdateien\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\SkyBox.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\PointLight.h">
+      <Filter>Headerdateien\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\DirectionalLight.h">
+      <Filter>Headerdateien\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Plane.h">
+      <Filter>Headerdateien\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\Renderer.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PuReEngine\ParticleEmitter.h">
+      <Filter>Headerdateien\Rendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WindowWin.cpp">
+      <Filter>Quelldateien\OS\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformWin.cpp">
+      <Filter>Quelldateien\OS\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformLinux.cpp">
+      <Filter>Quelldateien\OS\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowLinux.cpp">
+      <Filter>Quelldateien\OS\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="InputWin.cpp">
+      <Filter>Quelldateien\OS\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="InputLinux.cpp">
+      <Filter>Quelldateien\OS\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>Quelldateien\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Quelldateien\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Socket.cpp">
+      <Filter>Quelldateien\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Quelldateien\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Quelldateien\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="StackTraceWin.cpp">
+      <Filter>Quelldateien\OS\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgHelpDLL.cpp">
+      <Filter>Quelldateien\OS\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="StackTraceLinux.cpp">
+      <Filter>Quelldateien\OS\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalHandlerWin.cpp">
+      <Filter>Quelldateien\OS\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="SignalHandlerLinux.cpp">
+      <Filter>Quelldateien\OS\Linux</Filter>
+    </ClCompile>
+    <ClCompile Include="Font.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>Quelldateien\Physic</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundPlayer.cpp">
+      <Filter>Quelldateien\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Quelldateien\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="PointLight.cpp">
+      <Filter>Quelldateien\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLight.cpp">
+      <Filter>Quelldateien\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>Quelldateien\Rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C0601F71-F174-49E1-913C-D4A8CF5E5FB4}</ProjectGuid>
+    <RootNamespace>PuReCore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\propertysheets\Intermediate.props" />
+    <Import Project="..\propertysheets\PuRe.Core.Output.props" />
+    <Import Project="..\propertysheets\assimp.Include.props" />
+    <Import Project="..\propertysheets\fbx.Include.props" />
+    <Import Project="..\propertysheets\xinput.Include.props" />
+    <Import Project="..\propertysheets\FMOD.Include.x86.props" />
+    <Import Project="..\propertysheets\SOIL.props" />
+    <Import Project="..\propertysheets\Debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\propertysheets\Intermediate.props" />
+    <Import Project="..\propertysheets\PuRe.Core.Output.props" />
+    <Import Project="..\propertysheets\assimp.Include.props" />
+    <Import Project="..\propertysheets\fbx.Include.props" />
+    <Import Project="..\propertysheets\xinput.Include.props" />
+    <Import Project="..\propertysheets\FMOD.Include.x64.props" />
+    <Import Project="..\propertysheets\SOIL.props" />
+    <Import Project="..\propertysheets\Debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\propertysheets\Intermediate.props" />
+    <Import Project="..\propertysheets\PuRe.Core.Output.props" />
+    <Import Project="..\propertysheets\assimp.Include.props" />
+    <Import Project="..\propertysheets\fbx.Include.props" />
+    <Import Project="..\propertysheets\xinput.Include.props" />
+    <Import Project="..\propertysheets\FMOD.Include.x86.props" />
+    <Import Project="..\propertysheets\SOIL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\propertysheets\Intermediate.props" />
+    <Import Project="..\propertysheets\PuRe.Core.Output.props" />
+    <Import Project="..\propertysheets\assimp.Include.props" />
+    <Import Project="..\propertysheets\fbx.Include.props" />
+    <Import Project="..\propertysheets\xinput.Include.props" />
+    <Import Project="..\propertysheets\FMOD.Include.x64.props" />
+    <Import Project="..\propertysheets\SOIL.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 /ignore:4006</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\PuReEngine\Application.h" />
+    <ClInclude Include="include\PuReEngine\ApplicationDescription.h" />
+    <ClInclude Include="include\PuReEngine\Box.h" />
+    <ClInclude Include="include\PuReEngine\Camera.h" />
+    <ClInclude Include="include\PuReEngine\Color.h" />
+    <ClInclude Include="include\PuReEngine\Core.h" />
+    <ClInclude Include="include\PuReEngine\DbgHelpDLL.h" />
+    <ClInclude Include="include\PuReEngine\Defines.h" />
+    <ClInclude Include="include\PuReEngine\DirectionalLight.h" />
+    <ClInclude Include="include\PuReEngine\Font.h" />
+    <ClInclude Include="include\PuReEngine\GraphicsDescription.h" />
+    <ClInclude Include="include\PuReEngine\GraphicsModuleType.h" />
+    <ClInclude Include="include\PuReEngine\IGraphics.h" />
+    <ClInclude Include="include\PuReEngine\IInstanceBuffer.h" />
+    <ClInclude Include="include\PuReEngine\IMaterial.h" />
+    <ClInclude Include="include\PuReEngine\IInput.h" />
+    <ClInclude Include="include\PuReEngine\IIndexBuffer.h" />
+    <ClInclude Include="include\PuReEngine\InputLinux.h" />
+    <ClInclude Include="include\PuReEngine\InputWin.h" />
+    <ClInclude Include="include\PuReEngine\IPlatform.h" />
+    <ClInclude Include="include\PuReEngine\IRendertarget.h" />
+    <ClInclude Include="include\PuReEngine\IScene.h" />
+    <ClInclude Include="include\PuReEngine\ISignalHandler.h" />
+    <ClInclude Include="include\PuReEngine\ITexture2D.h" />
+    <ClInclude Include="include\PuReEngine\IVertexBuffer.h" />
+    <ClInclude Include="include\PuReEngine\IWindow.h" />
+    <ClInclude Include="include\PuReEngine\Matrix.h" />
+    <ClInclude Include="include\PuReEngine\Mesh.h" />
+    <ClInclude Include="include\PuReEngine\Model.h" />
+    <ClInclude Include="include\PuReEngine\ParticleEmitter.h" />
+    <ClInclude Include="include\PuReEngine\Plane.h" />
+    <ClInclude Include="include\PuReEngine\Platform.h" />
+    <ClInclude Include="include\PuReEngine\PlatformLinux.h" />
+    <ClInclude Include="include\PuReEngine\PlatformWin.h" />
+    <ClInclude Include="include\PuReEngine\PointLight.h" />
+    <ClInclude Include="include\PuReEngine\Quad.h" />
+    <ClInclude Include="include\PuReEngine\Quaternion.h" />
+    <ClInclude Include="include\PuReEngine\BoundingBox.h" />
+    <ClInclude Include="include\PuReEngine\Renderer.h" />
+    <ClInclude Include="include\PuReEngine\SignalHandlerLinux.h" />
+    <ClInclude Include="include\PuReEngine\SignalHandlerWin.h" />
+    <ClInclude Include="include\PuReEngine\SkyBox.h" />
+    <ClInclude Include="include\PuReEngine\Socket.h" />
+    <ClInclude Include="include\PuReEngine\SoundPlayer.h" />
+    <ClInclude Include="include\PuReEngine\Sphere.h" />
+    <ClInclude Include="include\PuReEngine\Sprite.h" />
+    <ClInclude Include="include\PuReEngine\StackTraceLinux.h" />
+    <ClInclude Include="include\PuReEngine\StackTraceWin.h" />
+    <ClInclude Include="include\PuReEngine\Texture2DDescription.h" />
+    <ClInclude Include="include\PuReEngine\Timer.h" />
+    <ClInclude Include="include\PuReEngine\Vector2.h" />
+    <ClInclude Include="include\PuReEngine\Vector3.h" />
+    <ClInclude Include="include\PuReEngine\Vector4.h" />
+    <ClInclude Include="include\PuReEngine\WindowDescription.h" />
+    <ClInclude Include="include\PuReEngine\WindowLinux.h" />
+    <ClInclude Include="include\PuReEngine\WindowWin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DbgHelpDLL.cpp" />
+    <ClCompile Include="DirectionalLight.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="InputLinux.cpp" />
+    <ClCompile Include="InputWin.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="PlatformLinux.cpp" />
+    <ClCompile Include="PlatformWin.cpp" />
+    <ClCompile Include="PointLight.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="SignalHandlerLinux.cpp" />
+    <ClCompile Include="SignalHandlerWin.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="SoundPlayer.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="StackTraceLinux.cpp" />
+    <ClCompile Include="StackTraceWin.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="WindowLinux.cpp" />
+    <ClCompile Include="WindowWin.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

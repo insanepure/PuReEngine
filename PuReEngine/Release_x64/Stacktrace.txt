@@ -1,0 +1,7 @@
+c:\users\andré.braun\documents\git\pureengine\src\pure.core\stacktracewin.cpp (34): PuReEngine::Core::CStackTraceWin::Run
+c:\users\andré.braun\documents\git\pureengine\src\pure.core\stacktracewin.cpp (34): XcptFilter
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c (666): __tmainCRTStartup$filt$0
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c (666): _C_specific_handler
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c (666): RtlDecodePointer
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c (666): RtlUnwindEx
+f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c (666): KiUserExceptionDispatcher

@@ -1,0 +1,18 @@
+#version 330 core
+
+uniform sampler2D DiffuseMap;
+uniform sampler2D DepthMap;
+uniform vec2 Resolution;
+
+vec2 CalcTexCoord()
+{
+   return gl_FragCoord.xy / Resolution;
+}
+
+void main()
+{
+	vec2 TexCoord = CalcTexCoord();
+	vec4 blend = texture2D( DiffuseMap, TexCoord );
+	gl_FragColor = blend;
+	gl_FragDepth = texture2D(DepthMap,TexCoord).r;
+}

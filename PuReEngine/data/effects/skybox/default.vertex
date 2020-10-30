@@ -1,0 +1,27 @@
+#version 330 core
+
+ layout(location = 0) in vec3 vertexPosition;
+ layout(location = 1) in vec2 vertexUV;
+ layout(location = 2) in vec3 vertexColor;
+ layout(location = 3) in vec3 vertexNormal;
+
+uniform mat4 InvertProjection;
+uniform mat4 InvertViewModel;
+
+out vec3 UV;
+
+void main()
+{
+        
+	mat3 IMV = mat3(InvertViewModel);
+	mat4 IP = InvertProjection;
+
+	vec4 Pos = vec4(vertexPosition,1);
+
+	vec3 unprojected = (IP * Pos).xyz;
+	gl_Position = Pos;
+	
+	UV = IMV * unprojected;
+
+}
+
